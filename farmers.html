@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmer deatils</title>
+
+   
+    
+    <link rel="stylesheet" href="farmers.css">
+<script>
+    let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+  searchIcon.classList.remove('fa-times');
+  searchForm.classList.remove('active');
+}
+
+let searchIcon = document.querySelector('#search-icon');
+let searchForm = document.querySelector('.search-form');
+
+searchIcon.onclick = () =>{
+  searchIcon.classList.toggle('fa-times');
+  searchForm.classList.toggle('active');
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+}
+
+window.onscroll = () =>{
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+  searchIcon.classList.remove('fa-times');
+  searchForm.classList.remove('active');
+}
+</script>
+</head>
+<body>
+<header class="header">
+
+    <img href="#" class="logo">
+
+    <nav class="navbar">
+        <a href="home1.html">HOME</a>
+        <a href="farm.html"target="_parent">SELL PRODUCTS</a>
+       
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+<section class="banner" id="banner">
+
+    <div class="content">
+        <h3>FARMING DEATILS</h3>
+       
+        <a href="#posts" class="btn">DATA</a>
+    </div>
+
+</section>
+<section class="container" id="posts">
+
+    <div class="posts-container">
+
+        <div class="post">
+            <img src="soil.jpeg" alt="" class="image">
+            
+            <h3 class="title">SOIL</h3>
+            <p class="text">Soil is an important matter for cultivatiom of crops.<br>
+                Soil supplies all the important factors for the growth of crop plants.<br>
+                The yielding potential is largely dependent on the soil in which the crops are grown.<br>
+                There are different types of soil for crop cultivation.</p><br>
+            <p class="text">
+                1.Red soil-Most of the part in Telangana state is covered by red soils which is about 48%.<br>They cover large part in Mahabubnagar,Nalgonda,Karimnagar,Khammam.....<br>The lowermost area of red soil is dark in color and very fertile, while the upper layer is sandy and porous.<br> Thus, proper use of fertilizers and irrigation yields high production of cotton, wheat, rice, pulses, millets, tobacco, oil seeds, potatoes, and fruits.2.Black soil-these soils account for 25% of total area of telangana.<br>Mostly found in Adilabad,Nizamabad,Rangareddy....Wheat, Groundnut and cotton are few of the crops which require black soil for their growth. <br>Cotton requires highly fertile black soil for maximum production.<br>
+                3.Laterite soils-covers 7% of the area.They are found in Medak and khammam districts.<br> Laterite soils are generally suitable for most of the dryland crops.<br> It is mainly cultivated with coconut, arecanut, banana, tapioca, vegetables, yams, pepper, pineapple, fruit trees etc.<br>
+                4.Alluvial soils-These soils are formed by deposition of sediments by river. <br>The soil is generally covered by tall grasses and forests, as well as a number of crops, such as rice, wheat, sugarcane, tobacco, maize, cotton, soybean, jute, oilseeds, fruits, vegetables, etc.<br>
+                5.Peaty and Marshy soils-these soils are formed by plants growing in the humid regions under permanently waterlogged conditions. <br>They are found in Kerala, Orissa, West Bengal (Sundarbans) and along the South-East coast of Tamil Nadu. <br>Where properly drained and fertilized, these soils often produce a very good rice crop.</p>
+           
+            <div class="links">
+                </div>
+        </div>
+
+        <div class="post">
+            <img src="pest.jpeg" alt="" class="image">
+            <div class="date">
+               
+            </div>
+            <h3 class="title">PESTICIDES</h3>
+            <p class="text">Pesticides are substances that are meant to control pests.This includes herbicide, insecticide, nematicide, molluscicide, piscicide, avicide, rodenticide, bactericide, insect repellent, animal repellent, microbicide, fungicide, and lampricide.Pesticide is less harmful if it controls what we want to control and does not harm other creatures in the environment.  Pesticides that don't stay in the environment long are usually less harmful than those that stay in the soil, water, or air for a long time.Few of the listed pesticides are less harmful
+                </p>
+            <p class="text">1.Bt - Bacillus thuringiensis controls some caterpillars and beetle larvae.<br>
+                2.Boric Acid - will control ants, cockroaches, silverfish, and termites.<br>
+                3.Diatomaceous Earth - a natural pesticide dries pests out, which is why it's effective on pests that need a lot of water, such as slugs, millipedes, and sowbugs.<br>
+                4.Insecticidal Soap - will control soft-bodied insects such as aphids, leafhoppers, scales, and whiteflies.<br> 
+                Iron Phosphate - will control slugs and snails. Very safe and very effective.<br>
+                5.Neem (Azadirachtin) - will control gypsy moths, leafminers, thrips, caterpillars, and mealybugs.<br>
+                6.Traps - Not all traps are created equal! Traps, like pantry traps, are excellent for controlling insects.<br>
+                
+                 Please keep in mind that just because a pesticide is "organic" or derived from a natural product, does not mean that it is safer than a synthetic chemical. It is your responsibility to read the pesticide label and follow all directions on it.</p>
+            <div class="links">
+                
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="govt.jpeg" alt="" class="image">
+            <div class="date">
+                
+            </div>
+            <h3 class="title">GOVERNAMENT SCHEMES</h3>
+            <p class="text">The main aims of this schemes are to supplement the financial needs of the farmers in procuring various inputs to ensure proper crop health and appropriate yields, and commensurate with the anticipated farm income. Majority of the farmers are small and marginal farmers and farming is the sole source of livelihood to them.</p>
+            <p class="text">There are many govt schemes:
+                Rythu Bandhu Scheme (AISS)<br>
+                Rythu Bandhu - Farmers Group Life Insurance Scheme: (Rythu Bhima)<br>
+                Soil Health Card Scheme (SHC)<br>
+                Subsidy Seed Distribution.<br>
+                Seed Village Programme.<br>
+                Farm Mechanization.<br>
+                Rastriya Krishi Vikas Yojana (RKVY)<br>
+                Rainfed Area Development Scheme (RAD) under national mission for. sustainable agriculture and many more...</p>
+            <div class="links">
+               
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div class="box">
+            <h3 class="title">WEATHER</h3>
+            <div class="about">
+                <img src="weat.jpeg" alt="waether forecast">
+                <p>
+                <a class="weather" href="https://weather.com/en-IN/weather/today/l/17.38,78.38?par=google" target="_parent">check weather</a>
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">SOIL</h3>
+            <div class="category">
+                <a href="#"> RED SOIL</a>
+                <a href="#"> BLACK SOIL </a>
+                <a href="#"> LATERITE SOIL  </a>
+                <a href="#"> ALLUVIAL SOIL  </a>
+                <a href="#"> PEATY AND MARSHY SOIL  </a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">PESTICIDES</h3>
+            <div class="p-post">
+                <a href="https://www.amazon.in/Killing-Cockroaches-Multiples-Purposes-Preservative/dp/B0B12LTBG8/ref=asc_df_B0B12LTBG8/?tag=googleshopdes-21&linkCode=df0&hvadid=587901519787&hvpos=&hvnetw=g&hvrand=9169537035035342759&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062146&hvtargid=pla-1698530719638&psc=1" target="_blank">
+                    <h3>01.Boric Acid</h3>
+                    
+                </a>
+                <a href="https://www.amazon.in/SRIMALAR-Enterprises-Bacillus-Thuringiensis-Pack/dp/B0B2DPW2WJ/ref=asc_df_B0B2DPW2WJ/?tag=googleshopdes-21&linkCode=df0&hvadid=619345158606&hvpos=&hvnetw=g&hvrand=3118099851357225228&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062146&hvtargid=pla-2107221376552&psc=1"target="_blank">
+                    <h3>02.Bacillus thuringiensis</h3>
+                    
+                <a href="https://www.amazon.in/PESTLY-Control-Cockroach-Bedbugs-Termites/dp/B09D8R1KYS/ref=asc_df_B09D8R1KYS/?tag=googleshopdes-21&linkCode=df0&hvadid=397082290070&hvpos=&hvnetw=g&hvrand=7279279748461074034&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062146&hvtargid=pla-1416154872623&psc=1&ext_vrnc=hi"target="_blank">
+                    <h3>03.Insecticidal Soap</h3>
+                    
+                </a>
+                <a href="https://www.amazon.in/Casa-Amor-Diatomaceous-Effective-Friendlly/dp/B01ALXH9RC/ref=asc_df_B01ALXH9RC/?tag=googleshopdes-21&linkCode=df0&hvadid=397006438966&hvpos=&hvnetw=g&hvrand=18067517613271919833&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062146&hvtargid=pla-343685989147&psc=1&ext_vrnc=hi"target="_blank">
+                    <h3>04.Diatomaceous Earth</h3>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">GOVT SCHEMES</h3>
+            <div class="tags">
+                <a href="http://rythubandhu.telangana.gov.in/" target="_blank">Rythu bandhu</a>
+                <a href="https://www.soilhealth.dac.gov.in/"target="_blank">SHC</a>
+                <a href="https://agricoop.nic.in/en/divisiontype/rashtriya-krishi-vikas-yojana">RKVY</a>
+                <a href="https://agriculture.nagaland.gov.in/rainfed-area-developmentrad-under-nmsa/"target="_blank">RAD</a>
+                <a href="http://rythubandhu.telangana.gov.in/Default_LIC1.aspx" target="_blank">Rythu Bhima</a>
+                <a href="https://seednet.gov.in/material/prog-schemes.htm#:~:text=Home%20Top-,(i)%20Assistance%20for%20Boosting%20Seed%20Production%20in%20the%20Private%20Sector,unit%20on%20seed%20infrastructure%20development."target="_blank">SSD</a>
+             </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+</section>
+<section class="footer">
+<div class="follow">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+ <div class="credit">created by <span>brainiacs</span> | all rights reserved</div>
+</section>
+</body>
+</html>

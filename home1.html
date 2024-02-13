@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>AGRIMARK</title>
+    <link rel="stylesheet" href="home1.css">
+    <script>
+        var i=0;
+        var images=[];
+        var time=3000;
+        images[0]=src="a1.jpeg";
+        images[1]=src="a2.jpeg";
+        images[2]=src="a7.jpeg";
+        images[3]=src="a10.jpeg";
+        
+        function changeImg()
+        {
+            document.slide.src=images[i];
+            if(i < images.length - 1)
+            {
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("changeImg()",time);
+        }
+        window.onload=changeImg;
+
+        function register() {
+    validateControls();
+}
+var gender;
+var specialization = [];
+function validateControls() {
+    //FirstName
+    var fname = document.getElementById("fname")
+    if (fname.value == "") {
+        window.alert("please enter your first name");
+        fname.focus();
+        return false;
+    }
+    //LastName
+    var lname = document.getElementById("lname")
+    if (lname.value == "") {
+        window.alert("please enter your last name");
+        lname.focus();
+        return false;
+    }
+    //Email
+    var email = document.getElementById("email")
+    if (email.value == "") {
+        window.alert("please enter your valid email Id");
+        email.focus();
+        return false;
+    }
+    //Mobile
+    var mobile = document.getElementById("mobile")
+    if (mobile.value == "") {
+        window.alert("please enter your 10 digits mobile no.");
+        mobile.focus();
+        return false;
+    }
+    
+    //Dob
+    var dob = document.getElementById("dob")
+    if (dob.value == "") {
+        window.alert("please enter your Date of Birth");
+        dob.focus();
+        return false;
+    }
+    //Address
+    var address = document.getElementById("address")
+    if (address.value == "") {
+        window.alert("please enter your address details");
+        address.focus();
+        return false;
+    }
+    //City
+    var city = document.getElementById("city")
+    if (city.value == "") {
+        window.alert("please enter your city name");
+        city.focus();
+        return false;
+    }
+    // Pin
+    var pin = document.getElementById("pin")
+    if (pin.value == "") {
+        window.alert("please enter your 6 digits Area PIN");
+        pin.focus();
+        return false;
+    }
+    // State
+    var state = document.getElementById("state")
+    if (state.value == "") {
+        window.alert("please enter your state name");
+        state.focus();
+        return false;
+    }
+     // Password
+     var password = document.getElementById("password")
+    if (password.value == "") {
+        window.alert("please enter your password");
+        password.focus();
+        return false;
+    }
+    else
+		{				                            
+               alert('Thank You for registering');
+			    
+		}
+
+    getControlValues();
+
+}
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo1.jpeg" alt="glwec.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#category-container">category</a></li>
+            <li class="item"><a href="#glimpse-section">about us </a></li>
+            <li class="item"><a href="#register">register</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">AGRIMARK</h1>
+        <p>Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals, and happiness. </p>
+       
+    </section>
+     
+    <section id="category-container">
+        <h1 class="h-primary center">CATEGORY</h1>
+        <div id="cources">
+            <div class="box">
+                <img src="B40.jpeg" alt="">
+                <a href="farmers.html" target="_parent">
+                <h2 class="h-secondary center">FARMER</h2></a>
+                <p class="center"> Farmers can access information about different soil types and the crops to be grown in a particular region with various climatic conditions.They can sell their products on this site at their comfort and get the worthy profit for it.</p>
+            </div>
+            <div class="box">
+                <img src="B45.jpeg" alt="">
+                <a href="cust.html" target="_parent">
+                <h2 class="h-secondary center">CONSUMER</h2></a>
+                <p class="center">The consumer can buy the fresh and healthy vegetables and fruits directly from the farmer itself and can pay nothing more than required prize.They get to see many options with alot of varieties and can choose the best. </p>
+            </div>
+           
+        </div> 
+    </section>
+    <section id="glimpse-section">
+        <h1 class="h-primary center">ABOUT US</h1>
+        
+          
+          <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="b20.jpeg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>SREEVALLI & ARTHI REDDY</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Manages and directs the company towards its primary goals and objectives.</p>
+                  <p>Sreevalli@gmail.com</p>
+                  <p>Arthi@gmail.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="b30.jpeg" alt="Mike" style="width:100%">
+                <div class="container">
+                  <h2>MOKSHITHA</h2>
+                  <p class="title">Marketing manager</p>
+                  <p>Undertakes markets research,understands the trends and customer preferences,creates marketing strategy and budgets.</p>
+                  <p>Mokshitha@gmail.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="b35.jpeg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>TARUNA SREE</h2>
+                  <p class="title">Designer</p>
+                  <p>Plays the important role in a successful company.Has extremely creative mind that can absorb visual trends and deploys then in a fresh manner. </p>
+                  <p>Tarunasree@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+     
+         <br>
+         <br>
+         <section id="register">
+            <h1 class="h-primary center">REGISTER</h1>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-10">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="8">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Register" onclick="register()">
+            </div>  
+            </div>
+    </section>
+
+
+    
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.agromark.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
